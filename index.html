@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc Mừng Sinh Nhật Em Yêu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Màn hình chờ ban đầu -->
+    <div id="start-screen">
+        <h1>Happy Birthday</h1>
+        <p class="subtitle">Người con gái Anh yêuuu nhất ❤️</p>
+        <button id="reveal-button">Nhấn vào đây nè, có điều bất ngờ nè❤️</button>
+    </div>
+
+    <!-- Nội dung chính (ban đầu bị ẩn) -->
+    <main id="main-content" class="hidden">
+        <div class="header">
+            <!-- THAY TÊN NGƯỜI YÊU BẠN VÀO ĐÂY -->
+            <h2>Gửi ngàn lời yêu đến My Girl</h2>
+            <p>Hôm nay là một ngày thật đặc biệt của Tháng 5...</p>
+        </div>
+
+        <!-- Khu vực hiển thị ảnh -->
+        <div id="photo-container">
+            <!-- Ảnh sẽ được JS tự động thêm vào đây -->
+        </div>
+
+        <!-- Bức thư -->
+        <div class="letter">
+            <h3>Chúc Mừng Sinh Nhật Emm...</h3>
+            <!-- THAY LỜI CHÚC CỦA BẠN VÀO ĐÂY -->
+            <p>Em yêu,</p>
+            <p>Chúc mừng sinh nhật lần thứ 21 của em! Mỗi ngày trôi qua, tình yêu anh dành cho em lại càng lớn dần. Cảm ơn em đã đến bên anh, mang theo ánh nắng và tiếng cười, làm cho thế giới của anh trở nên tươi đẹp và ý nghĩa hơn bao giờ hết.</p>
+            <p>Anh mong rằng em sẽ luôn mỉm cười, luôn hạnh phúc và mọi điều tốt đẹp nhất sẽ đến với em. Hãy cùng nhau tạo nên thật nhiều kỷ niệm đẹp hơn nữa nhé. Anh sẽ luôn ở đây, bên cạnh và yêu thương em.</p>
+            <p class="signature">
+                Yêu em rất nhiều,<br>
+                <!-- THAY TÊN BẠN VÀO ĐÂY -->
+                Anhh Bi của Emm
+            </p>
+        </div>
+    </main>
+
+    <!-- Nhạc nền -->
+    <audio id="bg-music" loop>
+        <source src="music/background_music.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Thư viện pháo hoa -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
